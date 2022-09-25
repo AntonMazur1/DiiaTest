@@ -13,6 +13,15 @@
 		891154A228DC435100C41B16 /* e-UkraineHead-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8911549C28DC434300C41B16 /* e-UkraineHead-Medium.otf */; };
 		891154EF28DDB8AC00C41B16 /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891154EE28DDB8AC00C41B16 /* DataStorage.swift */; };
 		891154F228DDBA5600C41B16 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891154F128DDBA5600C41B16 /* User.swift */; };
+		89330E5D28E051C3009B8F02 /* DocumentsViewController + DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89330E5C28E051C3009B8F02 /* DocumentsViewController + DataSource.swift */; };
+		89330E5F28E05270009B8F02 /* DocumentsViewController + Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89330E5E28E05270009B8F02 /* DocumentsViewController + Delegate.swift */; };
+		89330E6128E052B6009B8F02 /* DocumentsViewController + DelegateFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89330E6028E052B6009B8F02 /* DocumentsViewController + DelegateFlowLayout.swift */; };
+		8946913528E0575B00D87C85 /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8946913428E0575B00D87C85 /* ServicesViewController.swift */; };
+		8946913728E0577A00D87C85 /* ServicesStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8946913628E0577A00D87C85 /* ServicesStoryboard.storyboard */; };
+		8946913928E067A200D87C85 /* ServicesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8946913828E067A200D87C85 /* ServicesPresenter.swift */; };
+		8946913B28E067A900D87C85 /* ServicesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8946913A28E067A900D87C85 /* ServicesRouter.swift */; };
+		8946913D28E067B300D87C85 /* ServicesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8946913C28E067B300D87C85 /* ServicesInteractor.swift */; };
+		8946913F28E067C000D87C85 /* ServicesModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8946913E28E067C000D87C85 /* ServicesModuleBuilder.swift */; };
 		8957DEAD28DB348300E211A2 /* DocumentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8957DEAB28DB348300E211A2 /* DocumentCollectionViewCell.swift */; };
 		8957DEAE28DB348300E211A2 /* DocumentCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8957DEAC28DB348300E211A2 /* DocumentCollectionViewCell.xib */; };
 		89D11C3A28DB2A8D00700AB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D11C3928DB2A8D00700AB2 /* AppDelegate.swift */; };
@@ -34,6 +43,15 @@
 		8911549E28DC434300C41B16 /* e-Ukraine-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "e-Ukraine-Bold.otf"; sourceTree = "<group>"; };
 		891154EE28DDB8AC00C41B16 /* DataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
 		891154F128DDBA5600C41B16 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		89330E5C28E051C3009B8F02 /* DocumentsViewController + DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DocumentsViewController + DataSource.swift"; sourceTree = "<group>"; };
+		89330E5E28E05270009B8F02 /* DocumentsViewController + Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DocumentsViewController + Delegate.swift"; sourceTree = "<group>"; };
+		89330E6028E052B6009B8F02 /* DocumentsViewController + DelegateFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DocumentsViewController + DelegateFlowLayout.swift"; sourceTree = "<group>"; };
+		8946913428E0575B00D87C85 /* ServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
+		8946913628E0577A00D87C85 /* ServicesStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ServicesStoryboard.storyboard; sourceTree = "<group>"; };
+		8946913828E067A200D87C85 /* ServicesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesPresenter.swift; sourceTree = "<group>"; };
+		8946913A28E067A900D87C85 /* ServicesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesRouter.swift; sourceTree = "<group>"; };
+		8946913C28E067B300D87C85 /* ServicesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesInteractor.swift; sourceTree = "<group>"; };
+		8946913E28E067C000D87C85 /* ServicesModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesModuleBuilder.swift; sourceTree = "<group>"; };
 		8957DEAB28DB348300E211A2 /* DocumentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentCollectionViewCell.swift; sourceTree = "<group>"; };
 		8957DEAC28DB348300E211A2 /* DocumentCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DocumentCollectionViewCell.xib; sourceTree = "<group>"; };
 		89D11C3628DB2A8D00700AB2 /* diiaTestForMySelf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = diiaTestForMySelf.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +106,44 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		89330E6228E052D7009B8F02 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				89330E5C28E051C3009B8F02 /* DocumentsViewController + DataSource.swift */,
+				89330E5E28E05270009B8F02 /* DocumentsViewController + Delegate.swift */,
+				89330E6028E052B6009B8F02 /* DocumentsViewController + DelegateFlowLayout.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		89330E6328E05351009B8F02 /* DocumentsModule */ = {
+			isa = PBXGroup;
+			children = (
+				89D11C3F28DB2A8D00700AB2 /* Main.storyboard */,
+				89D11C3D28DB2A8D00700AB2 /* DocumentsViewController.swift */,
+				89FE97BF28DEF4DF004333F1 /* DocumentsPresenter.swift */,
+				89FE97C128DEF58E004333F1 /* DocumentsRouter.swift */,
+				89FE97C328DEF5EA004333F1 /* DocumentsInteractor.swift */,
+				89FE97C528DEF67A004333F1 /* DocumentsModuleBuilder.swift */,
+				89FE97BE28DEF3D4004333F1 /* View Cell */,
+				89330E6228E052D7009B8F02 /* Extensions */,
+			);
+			path = DocumentsModule;
+			sourceTree = "<group>";
+		};
+		89330E6428E05723009B8F02 /* ServicesModule */ = {
+			isa = PBXGroup;
+			children = (
+				8946913628E0577A00D87C85 /* ServicesStoryboard.storyboard */,
+				8946913428E0575B00D87C85 /* ServicesViewController.swift */,
+				8946913828E067A200D87C85 /* ServicesPresenter.swift */,
+				8946913A28E067A900D87C85 /* ServicesRouter.swift */,
+				8946913C28E067B300D87C85 /* ServicesInteractor.swift */,
+				8946913E28E067C000D87C85 /* ServicesModuleBuilder.swift */,
+			);
+			path = ServicesModule;
+			sourceTree = "<group>";
+		};
 		89D11C2D28DB2A8D00700AB2 = {
 			isa = PBXGroup;
 			children = (
@@ -108,7 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				89D11C5028DB301900700AB2 /* Application */,
-				89D11C4D28DB2FFC00700AB2 /* View Controllers */,
+				89D11C4D28DB2FFC00700AB2 /* Modules */,
 				89D11C4E28DB300800700AB2 /* Storyboards */,
 				891154F028DDB9E900C41B16 /* Services */,
 				89D11C4F28DB301000700AB2 /* Resources */,
@@ -117,23 +173,18 @@
 			path = diiaTestForMySelf;
 			sourceTree = "<group>";
 		};
-		89D11C4D28DB2FFC00700AB2 /* View Controllers */ = {
+		89D11C4D28DB2FFC00700AB2 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				89D11C3D28DB2A8D00700AB2 /* DocumentsViewController.swift */,
-				89FE97BF28DEF4DF004333F1 /* DocumentsPresenter.swift */,
-				89FE97C128DEF58E004333F1 /* DocumentsRouter.swift */,
-				89FE97C328DEF5EA004333F1 /* DocumentsInteractor.swift */,
-				89FE97C528DEF67A004333F1 /* DocumentsModuleBuilder.swift */,
-				89FE97BE28DEF3D4004333F1 /* View Cell */,
+				89330E6428E05723009B8F02 /* ServicesModule */,
+				89330E6328E05351009B8F02 /* DocumentsModule */,
 			);
-			path = "View Controllers";
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		89D11C4E28DB300800700AB2 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				89D11C3F28DB2A8D00700AB2 /* Main.storyboard */,
 				89D11C4428DB2A8F00700AB2 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
@@ -231,6 +282,7 @@
 				8911549F28DC434600C41B16 /* e-Ukraine-Bold.otf in Resources */,
 				891154A028DC434900C41B16 /* e-Ukraine-Medium.otf in Resources */,
 				8957DEAE28DB348300E211A2 /* DocumentCollectionViewCell.xib in Resources */,
+				8946913728E0577A00D87C85 /* ServicesStoryboard.storyboard in Resources */,
 				89D11C4328DB2A8F00700AB2 /* Assets.xcassets in Resources */,
 				89D11C4128DB2A8D00700AB2 /* Main.storyboard in Resources */,
 			);
@@ -243,13 +295,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89330E6128E052B6009B8F02 /* DocumentsViewController + DelegateFlowLayout.swift in Sources */,
 				89D11C3E28DB2A8D00700AB2 /* DocumentsViewController.swift in Sources */,
 				891154EF28DDB8AC00C41B16 /* DataStorage.swift in Sources */,
+				89330E5F28E05270009B8F02 /* DocumentsViewController + Delegate.swift in Sources */,
+				8946913B28E067A900D87C85 /* ServicesRouter.swift in Sources */,
+				8946913D28E067B300D87C85 /* ServicesInteractor.swift in Sources */,
 				89FE97C028DEF4DF004333F1 /* DocumentsPresenter.swift in Sources */,
+				8946913F28E067C000D87C85 /* ServicesModuleBuilder.swift in Sources */,
 				89FE97C228DEF58E004333F1 /* DocumentsRouter.swift in Sources */,
 				89FE97C628DEF67A004333F1 /* DocumentsModuleBuilder.swift in Sources */,
 				89D11C3A28DB2A8D00700AB2 /* AppDelegate.swift in Sources */,
+				8946913928E067A200D87C85 /* ServicesPresenter.swift in Sources */,
+				8946913528E0575B00D87C85 /* ServicesViewController.swift in Sources */,
 				8957DEAD28DB348300E211A2 /* DocumentCollectionViewCell.swift in Sources */,
+				89330E5D28E051C3009B8F02 /* DocumentsViewController + DataSource.swift in Sources */,
 				89D11C3C28DB2A8D00700AB2 /* SceneDelegate.swift in Sources */,
 				89FE97C428DEF5EA004333F1 /* DocumentsInteractor.swift in Sources */,
 				891154F228DDBA5600C41B16 /* User.swift in Sources */,

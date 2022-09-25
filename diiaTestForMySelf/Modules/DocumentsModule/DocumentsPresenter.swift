@@ -11,6 +11,7 @@ protocol DocumentsPresenterProtocol: AnyObject {
     func viewDidLoaded(_ vc: DocumentsViewController)
     func didLoadInfo(_ users: [User])
     func colorChanged(_ color: UIColor)
+    func cellUpdates(_ vc: DocumentsViewController)
 }
 
 class DocumentsPresenter {
@@ -25,6 +26,10 @@ class DocumentsPresenter {
 }
 
 extension DocumentsPresenter: DocumentsPresenterProtocol {
+    func cellUpdates(_ vc: DocumentsViewController) {
+        interactor.changeColor(vc)
+    }
+    
     func colorChanged(_ color: UIColor) {
         view?.changeColor(color)
     }
@@ -35,12 +40,11 @@ extension DocumentsPresenter: DocumentsPresenterProtocol {
     
     func viewDidLoaded(_ vc: DocumentsViewController) {
         interactor.loadUserData()
-        interactor.changeColor(vc)
         
         vc.documentsCollectionView.register(UINib(nibName: "DocumentCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: DocumentCollectionViewCell.identifier)
         vc.documentsCollectionView.layer.cornerRadius = 20
         
-        vc.pageController.currentPage = vc.currentPage.rawValue
+        vc.pageController.currentPage = vc.currentPage
         vc.pageController.numberOfPages = DataStorage.shared.numberOfDocument.count
     }
 }
