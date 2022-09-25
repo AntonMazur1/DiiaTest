@@ -21,6 +21,10 @@
 		89D11C4128DB2A8D00700AB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89D11C3F28DB2A8D00700AB2 /* Main.storyboard */; };
 		89D11C4328DB2A8F00700AB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89D11C4228DB2A8F00700AB2 /* Assets.xcassets */; };
 		89D11C4628DB2A8F00700AB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89D11C4428DB2A8F00700AB2 /* LaunchScreen.storyboard */; };
+		89FE97C028DEF4DF004333F1 /* DocumentsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FE97BF28DEF4DF004333F1 /* DocumentsPresenter.swift */; };
+		89FE97C228DEF58E004333F1 /* DocumentsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FE97C128DEF58E004333F1 /* DocumentsRouter.swift */; };
+		89FE97C428DEF5EA004333F1 /* DocumentsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FE97C328DEF5EA004333F1 /* DocumentsInteractor.swift */; };
+		89FE97C628DEF67A004333F1 /* DocumentsModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FE97C528DEF67A004333F1 /* DocumentsModuleBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +44,10 @@
 		89D11C4228DB2A8F00700AB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89D11C4528DB2A8F00700AB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89D11C4728DB2A8F00700AB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89FE97BF28DEF4DF004333F1 /* DocumentsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsPresenter.swift; sourceTree = "<group>"; };
+		89FE97C128DEF58E004333F1 /* DocumentsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsRouter.swift; sourceTree = "<group>"; };
+		89FE97C328DEF5EA004333F1 /* DocumentsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsInteractor.swift; sourceTree = "<group>"; };
+		89FE97C528DEF67A004333F1 /* DocumentsModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsModuleBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,8 +121,11 @@
 			isa = PBXGroup;
 			children = (
 				89D11C3D28DB2A8D00700AB2 /* DocumentsViewController.swift */,
-				8957DEAB28DB348300E211A2 /* DocumentCollectionViewCell.swift */,
-				8957DEAC28DB348300E211A2 /* DocumentCollectionViewCell.xib */,
+				89FE97BF28DEF4DF004333F1 /* DocumentsPresenter.swift */,
+				89FE97C128DEF58E004333F1 /* DocumentsRouter.swift */,
+				89FE97C328DEF5EA004333F1 /* DocumentsInteractor.swift */,
+				89FE97C528DEF67A004333F1 /* DocumentsModuleBuilder.swift */,
+				89FE97BE28DEF3D4004333F1 /* View Cell */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -145,6 +156,15 @@
 				89D11C4728DB2A8F00700AB2 /* Info.plist */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		89FE97BE28DEF3D4004333F1 /* View Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8957DEAB28DB348300E211A2 /* DocumentCollectionViewCell.swift */,
+				8957DEAC28DB348300E211A2 /* DocumentCollectionViewCell.xib */,
+			);
+			path = "View Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,9 +245,13 @@
 			files = (
 				89D11C3E28DB2A8D00700AB2 /* DocumentsViewController.swift in Sources */,
 				891154EF28DDB8AC00C41B16 /* DataStorage.swift in Sources */,
+				89FE97C028DEF4DF004333F1 /* DocumentsPresenter.swift in Sources */,
+				89FE97C228DEF58E004333F1 /* DocumentsRouter.swift in Sources */,
+				89FE97C628DEF67A004333F1 /* DocumentsModuleBuilder.swift in Sources */,
 				89D11C3A28DB2A8D00700AB2 /* AppDelegate.swift in Sources */,
 				8957DEAD28DB348300E211A2 /* DocumentCollectionViewCell.swift in Sources */,
 				89D11C3C28DB2A8D00700AB2 /* SceneDelegate.swift in Sources */,
+				89FE97C428DEF5EA004333F1 /* DocumentsInteractor.swift in Sources */,
 				891154F228DDBA5600C41B16 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

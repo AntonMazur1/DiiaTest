@@ -31,6 +31,7 @@ struct User {
                             documentsPhoto: documentsPhoto,
                             nameOfDocument: nameOfDocuments[index],
                             numberOfDocuments: numberOfDocuments[index])
+        
         users.append(user)
         }
         
