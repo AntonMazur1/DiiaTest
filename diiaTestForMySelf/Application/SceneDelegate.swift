@@ -11,12 +11,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
-        let vc = DocumentsModuleBuilder.build()
-        window.rootViewController = vc
+        let submodules = (
+            documents: DocumentsModuleBuilder.build(),
+            services: ServicesModuleBuilder.build()
+        )
+        let tabBarController = TabBarBuilder.build(usingSubmodules: submodules)
+        window.rootViewController = tabBarController
         self.window = window
         window.makeKeyAndVisible()
     }
