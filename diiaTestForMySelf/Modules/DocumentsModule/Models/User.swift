@@ -20,8 +20,8 @@ struct User {
         let name = DataStorage.shared.nameOfUser
         let dateOfBirth = DataStorage.shared.dateOfBirth
         let documentsPhoto = DataStorage.shared.documentsPhoto
-        let numberOfDocuments = DataStorage.shared.numberOfDocument.shuffled()
-        let nameOfDocuments = DataStorage.shared.nameOfDocuments.shuffled()
+        let numberOfDocuments = DataStorage.shared.numberOfDocument
+        let nameOfDocuments = DataStorage.shared.nameOfDocuments
         
         let iterationCount = min(numberOfDocuments.count, nameOfDocuments.count)
         

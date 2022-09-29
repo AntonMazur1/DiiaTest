@@ -8,20 +8,55 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Services View Controller-->
+        <!--Послуги-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="serviceVC" id="Y6W-OH-hqX" customClass="ServicesViewController" customModule="diiaTestForMySelf" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ugk-9n-LEN">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="CN9-Gn-4c5">
+                                <rect key="frame" x="0.0" y="47" width="390" height="763"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="UFs-iM-BD9" customClass="ServiceTableViewCell" customModule="diiaTestForMySelf" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="390" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UFs-iM-BD9" id="pbP-vn-D3G">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="CN9-Gn-4c5" secondAttribute="bottom" id="0uo-VK-R9v"/>
+                            <constraint firstItem="CN9-Gn-4c5" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="FhA-0P-0wI"/>
+                            <constraint firstItem="CN9-Gn-4c5" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="aS1-H7-fgJ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="CN9-Gn-4c5" secondAttribute="trailing" id="dGM-pr-haG"/>
+                            <constraint firstItem="Ugk-9n-LEN" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="gTC-Tf-UK2"/>
+                            <constraint firstAttribute="trailing" secondItem="Ugk-9n-LEN" secondAttribute="trailing" id="gyK-un-ikA"/>
+                            <constraint firstAttribute="bottom" secondItem="Ugk-9n-LEN" secondAttribute="bottom" id="sDL-vN-eFv"/>
+                            <constraint firstItem="Ugk-9n-LEN" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="w7k-t9-86Z"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Послуги" id="Ab9-OH-yU2"/>
+                    <connections>
+                        <outlet property="gradientView" destination="Ugk-9n-LEN" id="T3H-B8-Nan"/>
+                        <outlet property="servicesTableView" destination="CN9-Gn-4c5" id="cHf-cm-UMw"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137" y="4"/>
+            <point key="canvasLocation" x="1066.1538461538462" y="3.5545023696682461"/>
         </scene>
     </scenes>
     <resources>

@@ -25,6 +25,13 @@
 		8946914128E08B5400D87C85 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8946914028E08B5400D87C85 /* TabBarController.swift */; };
 		8946914328E08B7E00D87C85 /* TabBarBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8946914228E08B7E00D87C85 /* TabBarBuilder.swift */; };
 		8946914628E08C2400D87C85 /* TabBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8946914528E08C2400D87C85 /* TabBarRouter.swift */; };
+		8946916F28E34B0E00D87C85 /* ServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8946916D28E34B0E00D87C85 /* ServiceTableViewCell.swift */; };
+		8946917028E34B0E00D87C85 /* ServiceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8946916E28E34B0E00D87C85 /* ServiceTableViewCell.xib */; };
+		8946917228E34D1C00D87C85 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8946917128E34D1C00D87C85 /* Service.swift */; };
+		8946917628E34E4400D87C85 /* ServicesDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8946917528E34E4400D87C85 /* ServicesDataStorage.swift */; };
+		8946917928E46ADB00D87C85 /* ServicesViewController + Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8946917828E46ADB00D87C85 /* ServicesViewController + Delegate.swift */; };
+		8946917B28E46B2300D87C85 /* ServicesViewController + DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8946917A28E46B2300D87C85 /* ServicesViewController + DataSource.swift */; };
+		8946917E28E47C5500D87C85 /* NavigationControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8946917D28E47C5500D87C85 /* NavigationControllerBuilder.swift */; };
 		8957DEAD28DB348300E211A2 /* DocumentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8957DEAB28DB348300E211A2 /* DocumentCollectionViewCell.swift */; };
 		8957DEAE28DB348300E211A2 /* DocumentCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8957DEAC28DB348300E211A2 /* DocumentCollectionViewCell.xib */; };
 		89D11C3A28DB2A8D00700AB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D11C3928DB2A8D00700AB2 /* AppDelegate.swift */; };
@@ -58,6 +65,13 @@
 		8946914028E08B5400D87C85 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		8946914228E08B7E00D87C85 /* TabBarBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarBuilder.swift; sourceTree = "<group>"; };
 		8946914528E08C2400D87C85 /* TabBarRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarRouter.swift; sourceTree = "<group>"; };
+		8946916D28E34B0E00D87C85 /* ServiceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTableViewCell.swift; sourceTree = "<group>"; };
+		8946916E28E34B0E00D87C85 /* ServiceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceTableViewCell.xib; sourceTree = "<group>"; };
+		8946917128E34D1C00D87C85 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		8946917528E34E4400D87C85 /* ServicesDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesDataStorage.swift; sourceTree = "<group>"; };
+		8946917828E46ADB00D87C85 /* ServicesViewController + Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ServicesViewController + Delegate.swift"; sourceTree = "<group>"; };
+		8946917A28E46B2300D87C85 /* ServicesViewController + DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ServicesViewController + DataSource.swift"; sourceTree = "<group>"; };
+		8946917D28E47C5500D87C85 /* NavigationControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerBuilder.swift; sourceTree = "<group>"; };
 		8957DEAB28DB348300E211A2 /* DocumentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentCollectionViewCell.swift; sourceTree = "<group>"; };
 		8957DEAC28DB348300E211A2 /* DocumentCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DocumentCollectionViewCell.xib; sourceTree = "<group>"; };
 		89D11C3628DB2A8D00700AB2 /* diiaTestForMySelf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = diiaTestForMySelf.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +145,8 @@
 				89FE97C128DEF58E004333F1 /* DocumentsRouter.swift */,
 				89FE97C328DEF5EA004333F1 /* DocumentsInteractor.swift */,
 				89FE97C528DEF67A004333F1 /* DocumentsModuleBuilder.swift */,
+				891154F328DDBAA200C41B16 /* Models */,
+				891154F028DDB9E900C41B16 /* Services */,
 				89FE97BE28DEF3D4004333F1 /* View Cell */,
 				89330E6228E052D7009B8F02 /* Extensions */,
 			);
@@ -146,18 +162,56 @@
 				8946913A28E067A900D87C85 /* ServicesRouter.swift */,
 				8946913C28E067B300D87C85 /* ServicesInteractor.swift */,
 				8946913E28E067C000D87C85 /* ServicesModuleBuilder.swift */,
+				8946917428E34E1D00D87C85 /* View Cell */,
+				8946917328E34E1700D87C85 /* Models */,
+				8946917728E34F7B00D87C85 /* Services */,
+				8946917828E46ADB00D87C85 /* ServicesViewController + Delegate.swift */,
+				8946917A28E46B2300D87C85 /* ServicesViewController + DataSource.swift */,
 			);
 			path = ServicesModule;
 			sourceTree = "<group>";
 		};
-		8946914428E08BB600D87C85 /* TabBarController */ = {
+		8946914428E08BB600D87C85 /* TabBarModule */ = {
 			isa = PBXGroup;
 			children = (
 				8946914028E08B5400D87C85 /* TabBarController.swift */,
 				8946914228E08B7E00D87C85 /* TabBarBuilder.swift */,
 				8946914528E08C2400D87C85 /* TabBarRouter.swift */,
 			);
-			path = TabBarController;
+			path = TabBarModule;
+			sourceTree = "<group>";
+		};
+		8946917328E34E1700D87C85 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8946917128E34D1C00D87C85 /* Service.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8946917428E34E1D00D87C85 /* View Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8946916D28E34B0E00D87C85 /* ServiceTableViewCell.swift */,
+				8946916E28E34B0E00D87C85 /* ServiceTableViewCell.xib */,
+			);
+			path = "View Cell";
+			sourceTree = "<group>";
+		};
+		8946917728E34F7B00D87C85 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8946917528E34E4400D87C85 /* ServicesDataStorage.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8946917C28E47C3E00D87C85 /* NavigationControllerModule */ = {
+			isa = PBXGroup;
+			children = (
+				8946917D28E47C5500D87C85 /* NavigationControllerBuilder.swift */,
+			);
+			path = NavigationControllerModule;
 			sourceTree = "<group>";
 		};
 		89D11C2D28DB2A8D00700AB2 = {
@@ -182,9 +236,7 @@
 				89D11C5028DB301900700AB2 /* Application */,
 				89D11C4D28DB2FFC00700AB2 /* Modules */,
 				89D11C4E28DB300800700AB2 /* Storyboards */,
-				891154F028DDB9E900C41B16 /* Services */,
 				89D11C4F28DB301000700AB2 /* Resources */,
-				891154F328DDBAA200C41B16 /* Models */,
 			);
 			path = diiaTestForMySelf;
 			sourceTree = "<group>";
@@ -192,7 +244,8 @@
 		89D11C4D28DB2FFC00700AB2 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				8946914428E08BB600D87C85 /* TabBarController */,
+				8946917C28E47C3E00D87C85 /* NavigationControllerModule */,
+				8946914428E08BB600D87C85 /* TabBarModule */,
 				89330E6428E05723009B8F02 /* ServicesModule */,
 				89330E6328E05351009B8F02 /* DocumentsModule */,
 			);
@@ -302,6 +355,7 @@
 				8946913728E0577A00D87C85 /* ServicesStoryboard.storyboard in Resources */,
 				89D11C4328DB2A8F00700AB2 /* Assets.xcassets in Resources */,
 				89D11C4128DB2A8D00700AB2 /* Main.storyboard in Resources */,
+				8946917028E34B0E00D87C85 /* ServiceTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,10 +367,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8946914628E08C2400D87C85 /* TabBarRouter.swift in Sources */,
+				8946917228E34D1C00D87C85 /* Service.swift in Sources */,
 				89330E6128E052B6009B8F02 /* DocumentsViewController + DelegateFlowLayout.swift in Sources */,
 				89D11C3E28DB2A8D00700AB2 /* DocumentsViewController.swift in Sources */,
 				891154EF28DDB8AC00C41B16 /* DataStorage.swift in Sources */,
 				89330E5F28E05270009B8F02 /* DocumentsViewController + Delegate.swift in Sources */,
+				8946917E28E47C5500D87C85 /* NavigationControllerBuilder.swift in Sources */,
+				8946917928E46ADB00D87C85 /* ServicesViewController + Delegate.swift in Sources */,
 				8946913B28E067A900D87C85 /* ServicesRouter.swift in Sources */,
 				8946913D28E067B300D87C85 /* ServicesInteractor.swift in Sources */,
 				89FE97C028DEF4DF004333F1 /* DocumentsPresenter.swift in Sources */,
@@ -325,8 +382,11 @@
 				8946914328E08B7E00D87C85 /* TabBarBuilder.swift in Sources */,
 				89FE97C628DEF67A004333F1 /* DocumentsModuleBuilder.swift in Sources */,
 				8946914128E08B5400D87C85 /* TabBarController.swift in Sources */,
+				8946917B28E46B2300D87C85 /* ServicesViewController + DataSource.swift in Sources */,
 				89D11C3A28DB2A8D00700AB2 /* AppDelegate.swift in Sources */,
+				8946917628E34E4400D87C85 /* ServicesDataStorage.swift in Sources */,
 				8946913928E067A200D87C85 /* ServicesPresenter.swift in Sources */,
+				8946916F28E34B0E00D87C85 /* ServiceTableViewCell.swift in Sources */,
 				8946913528E0575B00D87C85 /* ServicesViewController.swift in Sources */,
 				8957DEAD28DB348300E211A2 /* DocumentCollectionViewCell.swift in Sources */,
 				89330E5D28E051C3009B8F02 /* DocumentsViewController + DataSource.swift in Sources */,

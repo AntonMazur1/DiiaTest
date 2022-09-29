@@ -85,28 +85,8 @@
             </objects>
             <point key="canvasLocation" x="1880" y="3.5545023696682461"/>
         </scene>
-        <!--Документи-->
-        <scene sceneID="d5K-HI-Dke">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0lX-BK-ozB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Документи" image="person.fill" catalog="system" id="fMl-ef-pXW"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9xF-CA-zbm">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Bfw-Ku-D1I"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ob4-ch-Ff6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="950.76923076923072" y="3.5545023696682461"/>
-        </scene>
     </scenes>
     <resources>
-        <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

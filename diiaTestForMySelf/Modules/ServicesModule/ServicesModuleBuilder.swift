@@ -8,7 +8,7 @@
 import UIKit
 
 class ServicesModuleBuilder {
-    static func build() -> ServicesViewController {
+    static func build(usingNavigationFactory factory: NavigationFactory) -> UINavigationController {
         let interactor = ServicesInteractor()
         let router = ServicesRouter()
         let presenter = ServicesPresenter(interactor: interactor, router: router)
@@ -18,6 +18,6 @@ class ServicesModuleBuilder {
         presenter.view = serviceVC
         router.viewController = serviceVC
         interactor.presenter = presenter
-        return serviceVC
+        return factory(serviceVC)
     }
 }

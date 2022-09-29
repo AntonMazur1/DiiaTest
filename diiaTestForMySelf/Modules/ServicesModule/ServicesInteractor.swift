@@ -8,10 +8,14 @@
 import Foundation
 
 protocol ServicesInteractorProtocol: AnyObject {
-    
+    func loadServices()
 }
 
 class ServicesInteractor: ServicesInteractorProtocol {
     weak var presenter: ServicesPresenterProtocol?
     
+    func loadServices() {
+        let services = Service.getServices()
+        presenter?.getServices(services: services)
+    }
 }

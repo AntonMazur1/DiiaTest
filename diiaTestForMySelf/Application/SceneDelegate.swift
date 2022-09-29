@@ -15,8 +15,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
         let submodules = (
-            documents: DocumentsModuleBuilder.build(),
-            services: ServicesModuleBuilder.build()
+            documents: DocumentsModuleBuilder.build(usingNavigationFactory: NavigationControllerBuilder.build),
+            services: ServicesModuleBuilder.build(usingNavigationFactory: NavigationControllerBuilder.build)
         )
         let tabBarController = TabBarBuilder.build(usingSubmodules: submodules)
         window.rootViewController = tabBarController

@@ -8,7 +8,7 @@
 import UIKit
 
 class DocumentsModuleBuilder {
-    static func build() -> DocumentsViewController {
+    static func build(usingNavigationFactory factory: NavigationFactory) -> UINavigationController {
         let interactor = DocumentsInteractor()
         let router = DocumentsRouter()
         let presenter = DocumentsPresenter(router: router, interactor: interactor)
@@ -18,6 +18,6 @@ class DocumentsModuleBuilder {
         presenter.view = documentsVC
         router.documentsVC = documentsVC
         interactor.presenter = presenter
-        return documentsVC
+        return factory(documentsVC)
     }
 }
